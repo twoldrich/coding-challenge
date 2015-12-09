@@ -16,7 +16,7 @@
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<script src="https://connectormwi.laterpay.net/1/sandbox/app-de-de.js" async charset="utf-8"></script>
+	<script src="https://connectormwi.dev.laterpaytest.net/dev/app-en-us.js" async charset="utf-8"></script>
 	<?php wp_head(); ?>
 </head>
 
