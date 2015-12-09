@@ -38,12 +38,12 @@
 
 
 	<?php
-	if ( has_term( 'picture', 'post_tag', $post ) ) {
+	if ( has_term( 'paid_picture', 'post_tag', $post ) ) {
 	echo "<meta property=\"laterpay:connector:translations:purchase_button:label_with_price\" content=\"Watch Now for %s and Pay Later\">";
 	echo "<meta property=\"laterpay:connector:translations:purchase_overlay:heading\" content=\"Watch Now\">";
 	}
 
-	if ( has_term( 'paid', 'post_tag', $post ) ) {
+	if ( has_term( 'paid_article', 'post_tag', $post ) ) {
 	echo "<meta property=\"laterpay:connector:translations:purchase_button:label_with_price\" content=\"Read Now for %s and Pay Later\">";
 	echo "<meta property=\"laterpay:connector:translations:purchase_overlay:heading\" content=\"Continue Reading\">";
 	}
