@@ -26,7 +26,6 @@
 
 
 	<meta property="laterpay:connector:appearance:purchase_overlay:show_payment_methods" content="false">
-	<meta property="laterpay:connector:appearance:purchase_overlay:logo_url" content="http://46.101.155.217/wp-content/themes/vantage/images/logo.png">
 	<meta property="laterpay:connector:appearance:purchase_overlay:primary_color" content="#0a526f">
 	<meta property="laterpay:connector:appearance:purchase_overlay:show_single_item_purchase_list" content="false">
 
@@ -41,11 +40,19 @@
 	if ( has_term( 'paid_picture', 'post_tag', $post ) ) {
 	echo "<meta property=\"laterpay:connector:translations:purchase_button:label_with_price\" content=\"Watch Now for %s and Pay Later\">";
 	echo "<meta property=\"laterpay:connector:translations:purchase_overlay:heading\" content=\"Watch Now\">";
+	echo "<meta property=\"laterpay:connector:appearance:purchase_overlay:logo_url\" content=\"http://46.101.155.217/wp-content/themes/vantage/images/logo.png\">";
 	}
 
 	if ( has_term( 'paid_article', 'post_tag', $post ) ) {
 	echo "<meta property=\"laterpay:connector:translations:purchase_button:label_with_price\" content=\"Read Now for %s and Pay Later\">";
 	echo "<meta property=\"laterpay:connector:translations:purchase_overlay:heading\" content=\"Continue Reading\">";
+	echo "<meta property=\"laterpay:connector:appearance:purchase_overlay:logo_url\" content=\"http://46.101.155.217/wp-content/themes/vantage/images/logo.png\">";
+	}
+
+	if ( has_term( 'paid_video', 'post_tag', $post ) ) {
+	echo "<meta property=\"laterpay:connector:translations:purchase_button:label_with_price\" content=\"Watch Now\">";
+	echo "<meta property=\"laterpay:connector:translations:purchase_overlay:heading\" content=\"Watch Now\">";
+	echo "<meta property=\"laterpay:connector:appearance:purchase_overlay:logo_url\" content=\"http://46.101.155.217/wp-content/themes/vantage/images/logo.png\">";
 	}
 	?>
 
